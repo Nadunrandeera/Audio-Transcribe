@@ -48,6 +48,6 @@ public class TranscriptionController {
         AudioTranscriptionResponse response = transcriptionModel.call(transcriptionRequest);
 
         tempFile.delete();
-        return new ResponseEntity<>(response.getResult().getOutput(), HttpStatus.OK)
+        return new ResponseEntity<>(response.getResult().getOutput(), HttpStatus.OK);
     }
 }
