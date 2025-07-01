@@ -17,7 +17,7 @@ public class TranscriptionService {
     private static final String UPLOAD_URL = "https://api.assemblyai.com/v2/upload";
     private static final String TRANSCRIBE_URL = "https://api.assemblyai.com/v2/transcript";
     @Value("${assemblyai.api.key}")
-    private String API_KEY;  // Replace with your actual key
+    private String API_KEY;
 
     private final RestTemplate restTemplate;
 

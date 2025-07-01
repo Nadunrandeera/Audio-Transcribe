@@ -1,11 +1,14 @@
+
 package com.audio.transcribe.repo;
 
-import org.apache.catalina.User;
+import com.audio.transcribe.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
-public interface UserRepo extends JpaRepository<User,Long> {
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
     Optional<User> findByUsername(String username);
     boolean existsByUsername(String username);
     boolean existsByEmail(String email);
