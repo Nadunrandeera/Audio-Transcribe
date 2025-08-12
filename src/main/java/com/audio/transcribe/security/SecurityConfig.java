@@ -1,4 +1,4 @@
-package com.audio.transcribe;
+package com.audio.transcribe.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
